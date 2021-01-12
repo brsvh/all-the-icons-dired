@@ -111,6 +111,8 @@
     (dired-revert                . all-the-icons-dired--refresh-advice)
     (dired-do-create-files       . all-the-icons-dired--refresh-advice)
     (dired-do-kill-lines         . all-the-icons-dired--refresh-advice)
+    (dired-create-directory      . all-the-icons-dired--refresh-advice)
+    (dired-do-rename             . all-the-icons-dired--refresh-advice)
     (dired-insert-subdir         . all-the-icons-dired--refresh-advice)
     (dired-create-directory      . all-the-icons-dired--refresh-advice)
     (dired-internal-do-deletions . all-the-icons-dired--refresh-advice)
