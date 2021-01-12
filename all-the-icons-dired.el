@@ -34,6 +34,7 @@
 
 (require 'cl-lib)
 (require 'dired)
+(require 'find-dired)
 (require 'all-the-icons)
 
 (defface all-the-icons-dired-dir-face
@@ -116,7 +117,8 @@
     (dired-insert-subdir         . all-the-icons-dired--refresh-advice)
     (dired-create-directory      . all-the-icons-dired--refresh-advice)
     (dired-internal-do-deletions . all-the-icons-dired--refresh-advice)
-    (dired-narrow--internal      . all-the-icons-dired--refresh-advice))
+    (dired-narrow--internal      . all-the-icons-dired--refresh-advice)
+    (find-dired-sentinel         . all-the-icons-dired--refresh-advice))
   "Alist of advice and advice functions.")
 
 (defun all-the-icons-dired--setup ()
